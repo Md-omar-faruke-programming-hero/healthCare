@@ -44,19 +44,19 @@ const Home = () => {
 
            <div className="card-group px-5">
                     <div className="card">
-                          <img src="https://www.comfortbd.com/IST/2020/January/11th/1578728587/digital-x-ray_1578728587.jpg" className="card-img-top h-75" alt="..."/>
+                          <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
                           <h5 className="card-title">Digital X-Ray</h5>
                         </div>
                     </div>
                     <div className="card">
-                          <img src="https://www.comfortbd.com/IST/2020/January/11th/1578728643/mammogram_1578728643.jpg" className="card-img-top h-75" alt="..."/>
+                          <img src="https://i.ibb.co/sm9Qwtd/duplex-study-1578729080.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
                           <h5 className="card-title">Mammogram</h5>
                         </div>
                     </div>
                     <div className="card">
-                          <img src="https://www.comfortbd.com/IST/2020/January/11th/1578728742/opg_1578728742.jpg" className="card-img-top h-75" alt="..."/>
+                          <img src="https://i.ibb.co/bbGqRBr/echo-cardiogram-1578728984.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
                           <h5 className="card-title">OPG</h5>
                         </div>
