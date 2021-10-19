@@ -94,7 +94,7 @@ const useFireBase=()=>{
    setIsloading(true)
     signOut(auth).then(() => {
         setUser({});
-       
+        setAddedItem(0)
       }).catch((error) => {
         setError(error.message)
 
