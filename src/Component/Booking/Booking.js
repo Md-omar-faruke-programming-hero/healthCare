@@ -2,12 +2,18 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import useAuth from '../Hooks/useAuth';
 const Booking = () => {
-    const{user,tests,prices,totalPrice}= useAuth()
+    const{user,tests,prices,totalPrice,cancleItem}= useAuth()
 
     const history=useHistory()
     const confirm=()=>{
         history.push("/confirm")
     }
+
+    const cancleItem1=()=>{
+        cancleItem()
+        history.push("/home");
+    }
+
     return (
         <div>
         <div className="row px-0 mx-0 container  ms-auto">
@@ -61,7 +67,7 @@ const Booking = () => {
                                 </tr>
                             </tbody>
                  </table>
-                 <button  className="btn w-100 btn-light">place order</button>
+                 <button onClick={cancleItem1} className="btn w-100 btn-light">Cancle</button>
                 
             </div>
 

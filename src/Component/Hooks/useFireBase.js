@@ -143,8 +143,16 @@ const useFireBase=()=>{
     
 }
 
+    const cancleItem=()=>{
+      setPrices([]);
+      setTest([]);
+      setTotalPrice(0)
+      setAddedItem(0)
+
+    }
+
 return {
- 
+  cancleItem,
     userEmail,
     userPassword,
     signUpFrom,

@@ -63,7 +63,7 @@ const Header = () => {
                             
                             </ul>
                             <form className="d-flex align-items-center">
-                            <i class="fas fa-clipboard-check me-5">{addedItem}</i>
+                            <i class="fas fa-clipboard-check me-5"><span className="text-success ms-1 fs-5">{addedItem}</span></i>
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                                 <button className="btn btn-outline-success" type="submit">Search</button>
                                
