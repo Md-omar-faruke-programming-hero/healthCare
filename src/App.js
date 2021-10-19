@@ -2,12 +2,15 @@ import { BrowserRouter ,Switch,Route} from "react-router-dom";
 import About from "./Component/About/About";
 import AuthProvider from "./Component/AuthProvider/AuthProvider";
 import Booking from "./Component/Booking/Booking";
+import Confirm from "./Component/Confirm/Confirm";
+import Contact from "./Component/Contact/Contact";
 import Details from "./Component/Details/Details";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
 import PrivateRoute from "./Component/Hooks/PrivateRoute/PrivateRoute";
 import Login from "./Component/Login/Login";
+import NotFoundPage from "./Component/NotFoundPage/NotFoundPage";
 import Service from "./Component/Service/Service";
 import Signup from "./Component/Signup/Signup";
 
@@ -48,9 +51,21 @@ function App() {
               <Signup></Signup>
           </Route>
 
+          <Route  path="/contact">
+              <Contact></Contact>
+          </Route>
+
+          <Route  path="/confirm">
+              <Confirm></Confirm>
+          </Route>
+
           <PrivateRoute  path="/booking">
               <Booking></Booking>
           </PrivateRoute>
+
+          <Route  path="*">
+              <NotFoundPage></NotFoundPage>
+          </Route>
 
         </Switch>
          <Footer></Footer>

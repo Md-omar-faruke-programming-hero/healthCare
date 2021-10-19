@@ -49,6 +49,9 @@ const Header = () => {
                                 <Link className="nav-link"to="/service" >Service</Link>
                                 </li>
                                 <li className="nav-item">
+                                <Link className="nav-link"to="/contact" >Contact</Link>
+                                </li>
+                                <li className="nav-item">
                                {
                                    user?.email? <button onClick={signout} className="btn btn-danger">logout</button>: <Link className="nav-link text-primary " to="/login" ><i className=" me-1 fas fa-sign-in-alt"></i>login</Link>
                                }

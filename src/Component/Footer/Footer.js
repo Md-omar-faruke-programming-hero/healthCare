@@ -3,7 +3,7 @@ import logo from "../../image/dlab_logo.jpg"
 
 const Footer = () => {
     return (
-        <div className="bg-dark">
+        <div className="bg-dark px-2">
         <div className="row px-0 mx-0   my-5">
             <div className="col-lg-4 w-50 mt-5 ms-5">
                 <img src={logo} className="w-25" alt="" srcset="" />

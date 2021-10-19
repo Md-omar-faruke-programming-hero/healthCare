@@ -4,7 +4,7 @@ import "./About.css"
 const About = () => {
     return (
 <>
-        <div className="row justify-content-center align-items-center p-5">
+        <div className="row px-0 mx-0 justify-content-center align-items-center p-5">
             <div className="col-md-5 col-12">
             Our Mission is to provide excellent health care services to all of our clients with dedication to meet their expectation. <br /><br />
 

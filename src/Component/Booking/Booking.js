@@ -1,7 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import useAuth from '../Hooks/useAuth';
 const Booking = () => {
     const{user,tests,prices,totalPrice}= useAuth()
+
+    const history=useHistory()
+    const confirm=()=>{
+        history.push("/confirm")
+    }
     return (
         <div>
         <div className="row px-0 mx-0 container  ms-auto">
@@ -16,7 +22,7 @@ const Booking = () => {
             <label htmlFor="birthday">Want to test on:</label> <br />
             <input type="date" id="" className="mb-3 w-100 border rounded-3 p-1  bg-light bg-opacity-25" name=""/>
           
-            <button className="btn btn-danger mb-5 w-100 px-5 ">save & confirm</button>
+            <button onClick={confirm} className="btn btn-danger mb-5 w-100 px-5 ">save & confirm</button>
            
             
             
