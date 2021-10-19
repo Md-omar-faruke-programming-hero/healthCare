@@ -55,9 +55,9 @@ function App() {
               <Contact></Contact>
           </Route>
 
-          <Route  path="/confirm">
+          <PrivateRoute  path="/confirm">
               <Confirm></Confirm>
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute  path="/booking">
               <Booking></Booking>
