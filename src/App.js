@@ -1,23 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter ,Switch,Route} from "react-router-dom";
+import About from "./Component/About/About";
+import AuthProvider from "./Component/AuthProvider/AuthProvider";
+import Booking from "./Component/Booking/Booking";
+import Details from "./Component/Details/Details";
+import Footer from "./Component/Footer/Footer";
+import Header from "./Component/Header/Header";
+import Home from "./Component/Home/Home";
+import PrivateRoute from "./Component/Hooks/PrivateRoute/PrivateRoute";
+import Login from "./Component/Login/Login";
+import Service from "./Component/Service/Service";
+import Signup from "./Component/Signup/Signup";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <AuthProvider>
+      <BrowserRouter>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+              <Home></Home>
+          </Route>
+
+          <Route  path="/home">
+              <Home></Home>
+          </Route>
+
+          <Route  path="/about">
+              <About></About>
+          </Route>
+
+          <Route  path="/service">
+              <Service></Service>
+          </Route>
+
+          <Route  path="/details/:id">
+              <Details></Details>
+          </Route>
+
+          <Route  path="/login">
+              <Login></Login>
+          </Route>
+
+          <Route  path="/signup">
+              <Signup></Signup>
+          </Route>
+
+          <PrivateRoute  path="/booking">
+              <Booking></Booking>
+          </PrivateRoute>
+
+        </Switch>
+         <Footer></Footer>
+      </BrowserRouter>
+      </AuthProvider>
+      
     </div>
   );
 }

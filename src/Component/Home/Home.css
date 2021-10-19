@@ -1,0 +1,10 @@
+.doctor{
+    object-fit: cover;
+}
+
+@media only screen and (max-width:688px) {
+    .bannertital{
+        text-align: center;
+    }
+    
+}

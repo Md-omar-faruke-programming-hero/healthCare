@@ -1,0 +1,39 @@
+
+.title{
+    
+    position: absolute;
+    left: 28%;
+    top: 32px;
+    
+    
+}
+@media only screen and (max-width:688px) {
+    .logo{
+        width: 20%;
+    }
+    .title{
+        font-size: 1rem;
+        position: absolute;
+        left: 44px;
+        top: 16px;
+        
+        
+    }
+    .call{
+        font-size: 2rem;
+        margin-left: 10px;
+       
+        
+    }
+    .nmbr{
+        font-size: 1rem;
+        color: red;
+        font-weight: 100;
+        
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+}
+
