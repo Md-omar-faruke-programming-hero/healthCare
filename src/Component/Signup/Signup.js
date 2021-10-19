@@ -4,7 +4,7 @@ import useAuth from '../Hooks/useAuth';
 // import useFireBase from '../Hooks/useFireBase';
 
 const Signup = () => {
-    const {userEmail,userPassword,signUpFrom,error,useingGoogleToSignIn,accountCreate}= useAuth()
+    const {userEmail,userPassword,signUpFrom,error,useingGoogleToSignIn,accountCreate,userName}= useAuth()
 
     return (
         <div className="text-center ">
@@ -12,7 +12,7 @@ const Signup = () => {
         <h1>Feel free to connect</h1>
            <form  onSubmit={signUpFrom} >
           
-          <input  required type="text" className="mb-3 border rounded-3 p-1  bg-light bg-opacity-25" placeholder="name" /><br />
+          <input onBlur={userName}  required type="text" className="mb-3 border rounded-3 p-1  bg-light bg-opacity-25" placeholder="name" /><br />
             
             <input onBlur={userEmail} required type="email" className=" mb-3 border rounded-3 p-1 bg-light bg-opacity-25" placeholder="email" /><br />
             <input onBlur={userPassword} type="password" className="mb-3 border rounded-3 p-1  bg-light bg-opacity-25" placeholder="password " /><br />

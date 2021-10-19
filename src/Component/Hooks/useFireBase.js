@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut ,GoogleAuthProvider,signInWithPopup,onAuthStateChanged} from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut ,GoogleAuthProvider,signInWithPopup,onAuthStateChanged,updateProfile} from "firebase/auth";
 import { useEffect, useState } from "react";
 import fireBaseInitialization from "../../FireBase/FireBase.initialize";
 
@@ -61,7 +61,7 @@ const useFireBase=()=>{
     signout(); 
     setError('')
     setAccountCreate("Account Create SuccessFully!")
-   
+    setUserName()
     
     
 
@@ -78,7 +78,7 @@ const useFireBase=()=>{
 //  signIn from
  const signInFrom=(e)=>{
      e.preventDefault()
-     signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
      .then((userCredential) => {
     
     const user = userCredential.user;
@@ -150,6 +150,16 @@ const useFireBase=()=>{
       setAddedItem(0)
 
     }
+     
+    // setuser namr by using signup from
+    const [name,setName]=useState('')
+    const userName=(e)=>{
+       setName(e.target.value)
+    }
+
+    const setUserName=()=>{
+      updateProfile(auth.currentUser,{displayName:name}).then(()=>{})
+    }
 
 return {
   cancleItem,
@@ -162,6 +172,8 @@ return {
     iNeedToDoThisTest,
     setError,
     setIsloading,
+    userName,
+    setUser,
     isloading,
     user,
     error,
