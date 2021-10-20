@@ -83,7 +83,7 @@ const useFireBase=()=>{
     
     const user = userCredential.user;
     setUser(user)
-   
+    setError("")
   }).catch((error) => {
     setError(error.message)
   });
