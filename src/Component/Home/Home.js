@@ -42,9 +42,9 @@ const Home = () => {
            <h1 className="text-center mt-4">Service & more</h1>
            <p className="text-center px-5">After inauguration in the year 1993 D-Lab started to take a lead in providing advanced health care services. The professional standard and the expertise on health care facilities are the…</p>
 
-           <div className="row card-group px-5">
+           <div className=" container mx-auto px-0 mx-0 row card-group ">
                   
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2 ">
                     <div className=" card">
                             <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
                             <div className="card-body">
@@ -52,7 +52,7 @@ const Home = () => {
                             </div>
                     </div>
                   </div>
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2">
                   <div className=" card">
                           <img src="https://i.ibb.co/sm9Qwtd/duplex-study-1578729080.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
@@ -61,7 +61,7 @@ const Home = () => {
                     </div>
                     
                   </div>
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2">
                   <div className=" card">
                           <img src="https://i.ibb.co/bbGqRBr/echo-cardiogram-1578728984.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2">
                   <div className="  card">
                           <img src="https://i.ibb.co/KDctpHL/comfortbd-1579068809-1.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
@@ -79,7 +79,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2">
                   <div className=" card">
                           <img src="https://i.ibb.co/sm9Qwtd/duplex-study-1578729080.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
@@ -88,7 +88,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-4 px-2">
                   <div className=" card">
                           <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
