@@ -39,28 +39,69 @@ const Home = () => {
         {/* service section */}
 
        <div>
-           <h1 className="text-center">Service & more</h1>
+           <h1 className="text-center mt-4">Service & more</h1>
            <p className="text-center px-5">After inauguration in the year 1993 D-Lab started to take a lead in providing advanced health care services. The professional standard and the expertise on health care facilities are the…</p>
 
-           <div className="card-group px-5">
-                    <div className="card">
-                          <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
-                        <div className="card-body">
-                          <h5 className="card-title">Digital X-Ray</h5>
-                        </div>
+           <div className="row card-group px-5">
+                  
+                  <div className="col-12 col-md-4">
+                    <div className=" card">
+                            <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title text-center">Digital X-Ray</h5>
+                            </div>
                     </div>
-                    <div className="card">
+                  </div>
+                  <div className="col-12 col-md-4">
+                  <div className=" card">
                           <img src="https://i.ibb.co/sm9Qwtd/duplex-study-1578729080.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
-                          <h5 className="card-title">Mammogram</h5>
+                          <h5 className="card-title text-center">Mammogram</h5>
                         </div>
                     </div>
-                    <div className="card">
+                    
+                  </div>
+                  <div className="col-12 col-md-4">
+                  <div className=" card">
                           <img src="https://i.ibb.co/bbGqRBr/echo-cardiogram-1578728984.jpg" className="card-img-top h-75" alt="..."/>
                         <div className="card-body">
-                          <h5 className="card-title">OPG</h5>
+                          <h5 className="card-title text-center">OPG</h5>
                         </div>
                     </div>
+                  </div>
+
+                  <div className="col-12 col-md-4">
+                  <div className="  card">
+                          <img src="https://i.ibb.co/KDctpHL/comfortbd-1579068809-1.jpg" className="card-img-top h-75" alt="..."/>
+                        <div className="card-body">
+                          <h5 className="card-title text-center">Echo Cardiogram</h5>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-4">
+                  <div className=" card">
+                          <img src="https://i.ibb.co/sm9Qwtd/duplex-study-1578729080.jpg" className="card-img-top h-75" alt="..."/>
+                        <div className="card-body">
+                          <h5 className="card-title text-center">ECG</h5>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-4">
+                  <div className=" card">
+                          <img src="https://i.ibb.co/WxB32xL/comfortbd-1579078657.jpg" className="card-img-top h-75" alt="..."/>
+                        <div className="card-body">
+                          <h5 className="card-title text-center">4D Ultrasonography</h5>
+                        </div>
+                    </div>
+                  </div>
+                   
+                   
+                 
+                    
+                    
+                   
             </div>
             <div className="text-center mt-1 mb-5">
                 <button onClick={seeMoreService} className="btn btn-danger">See more</button>
